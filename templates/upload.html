@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PicUploader</title>
+</head>
+<body>
+<div>
+    <h1>ServiceRocket Pic Uploader</h1>
+    <form id="srPicUp" action="{{ url_for('uploadPic') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" multiple >
+        <input type="submit" value="send">
+    </form>
+</div>
+</body>
+</html>
